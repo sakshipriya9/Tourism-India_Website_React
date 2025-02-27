@@ -39,3 +39,36 @@ body{
 .home, .destinations, .about, .contact{
     padding: 50px;
 }
+
+.home h2{
+    margin-bottom: 20px;
+}
+
+
+/* Carousel Styles */
+.carousel .slide img {
+    max-height: 400px;
+    /* object-fit: cover; */
+    border-radius: 10px;
+  }
+
+  .carousel .legend {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+  padding: 10px !important;
+  font-size: 20px !important;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .carousel .legend {
+      font-size: 12px !important;
+      padding: 5px !important;
+      bottom: 15px !important;
+      width: 80%;
+    }
+  
+    .carousel .slide img {
+      height: 200px; /* Reduce height for mobile */
+    }
+  }
