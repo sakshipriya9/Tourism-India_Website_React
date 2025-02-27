@@ -35,3 +35,7 @@ body{
     width: 100%;
     bottom: 0;
 }
+
+.home, .destinations, .about, .contact{
+    padding: 50px;
+}
