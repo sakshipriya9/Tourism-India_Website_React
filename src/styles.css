@@ -112,15 +112,10 @@ body{
 .about {
     text-align: center;
     padding: 50px 20px;
-    /* background-image: url("/images/unesco.jpg"); Set your background image */
-    background-size: cover;  /* Make the image cover the entire page */
-    background-position: center;  /* Center the image */
-    background-attachment: fixed;  /* Keep the background fixed while scrolling */
-    color: white; /* Ensure text is visible */
-    min-height: 100vh; /* Make sure it covers the full viewport height */
+    background:rgb(220, 240, 190);
+    height: 100vh;
+    width: 100%;
   }
-  
-  
   
   .flip-card-container {
     display: flex;
@@ -170,4 +165,17 @@ body{
     background: #f5f5f5;
     color: black;
     transform: rotateY(180deg);
-  }  
+  } 
+
+  @media (max-width: 768px) {
+    .flip-card-container {
+        flex-direction: column; /* Stack cards in a column */
+        align-items: center; /* Center align cards */
+    }
+    .flip-card {
+        width: 80%; /* Make it wider for better fit */
+        max-width: 250px; /* Limit max width */
+        height: 140px;
+        margin-bottom: 20px;
+    }
+}
