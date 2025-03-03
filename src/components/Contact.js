@@ -1,11 +1,14 @@
 import "../styles.css";
+import RotatingGlobe from "./Globe";
 
 const Contact = () => {
     return(
-        <div className="contact">
-            <h2> Contact Us </h2>
-            <p> Email: info@indiatourism.com </p>
-            <p> Phone: +91 12345 67890 </p>
+        <div className="contact-page">
+            <h2>🌍 Contact Us </h2>
+            <p> Click on a city to see contact details. </p>
+            <div className="globe-container">
+                <RotatingGlobe />
+            </div>
         </div>
     );
 };
